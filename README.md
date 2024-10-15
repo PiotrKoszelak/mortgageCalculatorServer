@@ -1,7 +1,16 @@
-# Server template
+# "Justfin" server
 
-This is a template of Node project implementation.
-It has all the configuration prepared and is written in TypeScript.
+https://www.justfin.site/
+
+> NOTE  
+> The app is under development
+
+The app provides sophisticated dashboard for loans/mortgage calculations.
+It contains:
+
+-   amount, interest, time, installment type and overpayment result inputs
+-   summary about total calculated values
+-   customizable monthly overpayments
 
 ## Configuration
 
