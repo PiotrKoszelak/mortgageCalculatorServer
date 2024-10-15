@@ -1,8 +1,7 @@
 import express from 'express';
 import 'dotenv/config';
 
-// Project dependencies
-import router from './src/routes/chat';
+import router from './src/routes/calculate';
 import { errorHandler } from './src/middlewares/error';
 import { statusHandler } from './src/middlewares/status';
 
@@ -24,8 +23,7 @@ app.listen(port, () => {
     console.log(`Server running on port ${port}`);
 });
 
-// Routes
-app.use('/chat', router);
+app.use('/calculate', router);
 
 app.use('/status', statusHandler);
 

@@ -1,6 +1,6 @@
 import express from 'express';
 
-import { post } from '../controllers/chat';
+import { post } from '../controllers/calculate';
 
 const router = express.Router();
 

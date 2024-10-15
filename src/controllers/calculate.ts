@@ -1,12 +1,11 @@
 import { NextFunction, Request, Response } from 'express';
-import { getBotResponse } from '../services/chat';
+import { calculateData } from '../services/calculate';
 
 async function post(req: Request, res: Response, next: NextFunction) {
-    const { message } = req.body;
-
     try {
-        const botReply = await getBotResponse(message);
-        res.status(200).send({ reply: botReply });
+        const { inputs } = req.body;
+        const data = calculateData(inputs);
+        res.status(200).send({ data });
     } catch (error) {
         next(error);
     }
